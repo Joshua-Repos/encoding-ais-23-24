@@ -1,8 +1,24 @@
 <html>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+#encodedDiv {
+  width: 100%;
+  padding: 50px 0;
+  text-align: center;
+  background-color: lightblue;
+  margin-top: 20px;
+}
+</style>
   <head>
     <title>encoder-example-ais</title>  
   </head>
   <body>
-    <script defer src="encoder.js"></script>
-  </body>
+    <script src="encoder.js">
+    </script>
+    Input:<input type="text" id="mytext">
+    <button id="myBtn" type="button"  onclick="encodeText()">Encode</button>
+
+    <div id="encodedDiv">
+    </div>
+     </body>
 </html>
